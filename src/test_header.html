@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page User Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.1/svg.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="drawing"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Input: Number of users per page (48 integers)
+    const usersPerPage = [
+        0, 2, 0, 0, 0, 1, 0, 3, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 2, 0, 0, 0, 0,
+        0, 0, 0, 9, 0, 0, 0, 0, 0, 0,
+        0, 0, 0,30, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ];
+
+    // SVG.js setup
+    const draw = SVG().addTo('#drawing').size(1200, 20); // Adjust size for 10x10 grid
+
+    const maxUsers = Math.max(...usersPerPage); // Find the maximum number of users to normalize the color intensity
+
+    const squareSize = 10; // Size of each square
+
+
+    usersPerPage.forEach((users, index) => {
+        const x = index * (squareSize); // Position squares horizontally
+        const y = 0; // Keep y constant for a single row
+
+        // Calculate the color intensity based on the number of users
+        const offset = 30;
+        const spread = 255 - offset;
+        const intensity = (spread-Math.round((users / maxUsers) * spread)) + offset;
+        const color = users === 0 ? `rgb(${spread},${spread},${spread})` : `rgb(255, ${intensity}, ${intensity})`;
+
+        // Draw the square
+        draw.rect(squareSize, squareSize)
+            .move(x, y)
+            .fill(color)
+    });
+  });
+</script>
+
+</body>
+</html>

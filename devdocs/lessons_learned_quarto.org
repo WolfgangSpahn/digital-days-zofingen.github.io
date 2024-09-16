@@ -1,0 +1,68 @@
+You can organize your Quarto project by placing your markdown source files in a separate folder like =src_md= and still compile them into the final
+output (e.g., HTML, PDF, or other formats). Here's how you can do it:
+
+*** Steps to Organize Markdown Files in a Subfolder
+:PROPERTIES:
+:CUSTOM_ID: steps-to-organize-markdown-files-in-a-subfolder
+:END:
+1. *Create the =src_md= Folder*:
+
+   - In the root of your Quarto project, create a folder named =src_md=
+     (or any other name you prefer).
+
+2. *Move Markdown Files*:
+
+   - Move all your existing markdown files (=.qmd=, =.md=, etc.) into
+     the =src_md= folder.
+
+3. *Update the =_quarto.yml= Configuration*:
+
+   - In your =_quarto.yml= file (which is the configuration file for
+     Quarto), you'll need to specify the input directory and the output
+     options.
+   - Here is an example of how to set up the =_quarto.yml= file:
+
+   #+begin_src yaml
+   project:
+     type: website # or book, or article based on your output
+     output-dir: _site  # Specify where the compiled output will go
+
+   format:
+     html:
+       toc: true  # Example, table of contents for HTML
+
+   execute:
+     echo: true
+
+   input-dir: src_md  # Specify the folder where your markdown files are located
+   #+end_src
+
+   This tells Quarto that your markdown files are in the =src_md=
+   folder.
+
+4. *Compiling the Project*:
+
+   - When you run =quarto render=, Quarto will automatically look for
+     the source markdown files in the =src_md= folder (as per the
+     =input-dir= setting) and generate the output.
+
+5. *Rendering Specific Files* (Optional):
+
+   - If you want to render specific files from the =src_md= folder, you
+     can do so by specifying the path directly in the =quarto render=
+     command. For example:
+
+     #+begin_src sh
+     quarto render src_md/my_file.qmd
+     #+end_src
+
+6. *Organizing Output* (Optional):
+
+   - If you want to further customize where the output files go, you can
+     adjust the =output-dir= in =_quarto.yml=. This is useful if you
+     want a separate folder for compiled files, e.g., =output/= instead
+     of =_site=.
+
+With this setup, your markdown source files will be neatly organized in
+the =src_md= folder, and Quarto will still be able to compile them into
+the desired output.

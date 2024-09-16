@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<svg width="100" height="100" viewBox="0 0 100 100">
+    <polygon points="80,10 20,50 80,90" fill="black"/>
+    <polygon points="80,10 20,50 80,90" fill="black" transform="scale(-1, 1) translate(-100, 0)"/>
+</svg>

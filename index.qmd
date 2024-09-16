@@ -1,0 +1,1165 @@
+---
+title: "Künstliche Intelligenz"
+subtitle: |
+  **Teil A**: Technologie, Anwendungen und Auswirkungen<br>
+  **Teil B**: in Didaktik und Pädagogik
+  <br><br>
+  *Dr. Wolfgang Spahn*
+  <br><br>
+  12.9.2024
+format: 
+  revealjs: 
+    config:
+      touch: false
+    controls: true
+    smaller: true
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Logo_PH_Bern.webp
+    footer: Dr. Wolfgang Spahn
+    css: [styles.css, custom-styles.css]  # Include your custom CSS file here
+    include-in-header: includes.html
+resources:
+  - interaktive.pdf
+---
+
+## WLAN
+
+**SSID**: ...
+
+**Password**: ...
+
+## Infos
+<!-- --------------------------------------------------- slide I1 ----------------------------------------------------- -->
+<br>
+Zum Starten des Ateliers bitte diesen Link verwenden:
+<br>
+<div type="showIPSocket" id="ip-socket" class="centered-xxl-text"></div>
+<br>
+Für Vollbildmodus bitte diesen Button "Fullscreen" klicken oder Taste "F11".
+<br><br>
+<button onclick="goFullScreen()" class="centered-xxl-rounded-button">Fullscreen</button>
+
+<!-- --------------------------------------------------- slide I2 ----------------------------------------------------- -->
+## Willkommen im Atelier
+
+<div type="teamCollection" id="team-collection"></div>
+
+<!-- --------------------------------------------------- slide A3 ----------------------------------------------------- -->
+## Agenda: Teil A und B
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**Teil A**
+
+- Technologie hinter künstlicher Intelligenz
+  - KI Technologie heute
+  - Wir bauen ein neuronales Netz
+  - KI Foundation Modelle
+- Anwendungen von künstlicher Intelligenz
+  - KI Fähigkeiten
+- Gesellschaftliche Auswirkungen von künstlicher Intelligenz
+  - Geistige Arbeit mit KI
+- KI Chatbots und Tools im Schulumfeld
+  - Realitäten/Kontrolle des KI Einsatzes
+  - Förderung durch KI Einsatz
+
+:::
+::: {.column width="50%"}
+
+**Teil B**
+
+<!-- - Intelligente Lernbegleitsysteme
+  - Historie/Entwicklung
+  - Pädagogische Ausrichtung -->
+- konstruktivistisch-kognitive KI Lernsysteme
+  - DEMO
+  - Konzept
+  - Umsetzung
+- Frage & Antwort
+  <!-- - Wie seht ihr die Zukunft der KI in der Pädagogik? -->
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide A4 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Technologie heute
+:::
+
+<!-- --------------------------------------------------- slide A5 ----------------------------------------------------- -->
+## KI: Definition
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Viele Definitionen für Intelligenz
+
+- **Intelligenz (ganzheitlich)** ist die Hauptfunktion des menschlichen Gehirns, um kognitive Funktionen bereitzustellen, die einem Lebewesen das Überleben in einer feindlichen Umgebung ermöglichen. 
+- **Intelligenz (kommerziell)** wird benötigt, um Aufgaben zu erledigen, die von geistigen Arbeitern ausgeführt werden. 
+- 1000 andere: …
+
+**Künstliche Intelligenz**
+
+- eine Software kann bis zu einem gewissen Grad geistige Arbeit leisten.
+:::
+::: {.column width="50%"}
+Analogie
+
+![Ein künstliches Herz ersetzt ein menschliches Herz. Ja/Nein](images/artificialHeart.webp)
+
+:::
+::::
+::: {.notes}
+- Daher spreche ich lieber von cognitive Aufgaben.
+:::
+
+
+<!-- --------------------------------------------------- slide A6 ----------------------------------------------------- -->
+## Kognition - 2024
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**Text**
+![](images/ChatGPT.webp){width="70%" style="border: 1px solid lightgray;"}
+
+**Video**
+![](images/ai_dino1.gif){width="70%"}
+
+
+:::
+::: {.column width="50%"}
+
+**Bild**
+![](images/smart-city-computer-vision-yolov7-deep-learning.webp){width="80%"}
+
+**Sound**
+![](images/sound.webp){width="70%"}
+
+:::
+::::
+
+::: {.notes}
+- Forschung deckt ziemlich alle kognitiven Bereiche ab.
+:::
+
+<!-- --------------------------------------------------- slide A7 ----------------------------------------------------- -->
+## Humanoide Roboter 2024
+
+:::: {.columns}
+::: {.column width="50%"}
+![](images/robots at assembly line.webp){width="80%" }
+![](images/robot gets tomato.webp){width="80%"}
+:::
+::: {.column width="50%"}
+![](images/robots in warehouse1.webp){width="80%" }
+![](images/robot is cooking.webp){width="80%" }
+:::
+![](images/robot hand.gif){.absolute top="30%" left="25%" width="30%" }
+::::
+
+::: {.notes}
+- Diese Roboter werden in Pilotprojekten eingesetzt. Keine Laborübungen.
+:::
+
+<!-- --------------------------------------------------- slide A8 ----------------------------------------------------- -->
+## Mustererkennung
+
+<div type="mustererkennung" id="svg-mustererkennung"></div>
+
+<!-- <script type="module" src="mustererkennung.js"></script>
+<div id="svg-mustererkennung"></div> -->
+
+<!-- --------------------------------------------------- slide A9 ----------------------------------------------------- -->
+## Trainingsarten
+
+:::: {.columns}
+::: {.column width="50%"}
+**Überwachtes Lernen**
+
+Menschliche Experten klassifizieren/markieren die Daten. Aufgrund dieser Daten wird das Modell trainiert. Aufwendig und teuer.
+
+![](images/GettyImages-898172160-scaled.webp){width="80%" }
+:::
+::: {.column width="50%"}
+**Unüberwachtes Lernen**
+Das Modell lernt aus den Daten ohne menschliche Eingriffe. Rekonstruiert verrauschte Daten. [source](https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-2/)
+
+![](images/Generation-with-Diffusion-Models.webp){width="90%" }
+
+Findet das nächste Wort/Bild in einer Sequenz. `how are [you]`
+:::
+::::
+
+<!-- --------------------------------------------------- slide A10 ----------------------------------------------------- -->
+## Text Bedeutung
+:::: {.columns}
+::: {.column width="50%"}
+**Wort Embeddings**
+
+- Ein Wort/Token entspricht einem Zahlen Vektor
+- Wort Beziehungen entsprechen Vektor Beziehungen 
+
+![](images/word embedding.webp){width="80%" }
+:::
+::: {.column width="50%"}
+
+**Satz Embedding**
+
+- Ein Satz entspricht einem Zahlen Vektor
+- Satz Beziehungen entsprechen Vektor Beziehungen
+
+![](images/Attention Matrix.webp){width="80%" }
+:::
+::::
+
+[OpenAI Tokenizer](https://platform.openai.com/tokenizer)
+
+<!-- --------------------------------------------------- slide A11 ----------------------------------------------------- -->
+## Mehrdeutigkeit @!?
+:::: {.columns}
+::: {.column width="50%"}
+**Ein Wort, zwei Bedeutungen**
+
+- Ein Wort hat zunächst nur eine Bedeutung (embedding). 
+- Um Text realistisch zu bearbeiten, müssen Worte im Kontext prozessiert werden.
+
+<br>
+
+![Beispiel: bank (Geldinstitut), bank (Ufer)](images/meaning of bank.png){width="95%" .gray-border}
+
+:::
+::: {.column width="50%"}
+
+**Das Wort im Kontext**
+
+- Ein neuronal Netz analysiert die Beziehungen der Worte im Kontext (Satz, Paragraph, Buch)
+- Daraus lernt es das wahrscheinlichste Wort vorherzusagen.
+
+![Beispiel: river, bank](images/context of bank.png){width="95%" .gray-border}
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide A12 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Foundation Modelle/Large Language Models/GPTs
+:::
+
+<!-- --------------------------------------------------- slide A13 ----------------------------------------------------- -->
+## KI erledigt geistige Arbeit
+
+:::: {.columns}
+::: {.column width="50"}
+
+LLMs können geistige Arbeit erledigen im Umgang mit Wissen (Training) und Dokumenten (spezielle Techniken).
+
+- identifiziere Sachverhalt(e), die kombiniert und zusammengefasst werden
+- identifiziere Regeln, die auf den Inhalt der Frage angewandt werden und deren Ergebnis erklärt wird
+- identifiziere Formel(n), die mit den Werten aus der Frage gelöst werden. Gib den Pfad an.
+
+[Open LLMs](https://labs.perplexity.ai/)
+[OpenAI](https://openai.com/)
+[ChatGPT](https://openai.com/chatgpt)
+
+:::
+::: {.column width="15%"}
+:::
+::: {.column width="35%"}
+
+Fertigkeiten           |   | Anmerkungen
+-----------------------|---|---------------------------
+Schlussfolgern         | ✓ | Kann Dinge erfinden
+Planen                 | ✗ | Nein, muss vom Nutzer kommen
+Abstraktes Denken      | ✓ | Wenn der Kontext klar ist (robust?)
+Komplexe Zusammenhänge | ✓ | Wenn der Kontext klar ist (robust?)
+Aus Erfahrung lernen   | ✓ | Nur innerhalb einer Sitzung 
+
+:::
+::::
+
+::: {.notes}
+bitte klassifiziere ein 2x2 Bild mit zwei möglichen Farben - rot(x) oder schwarz(o) - in einfarbig, vertikal, horizontal, schachbrett oder na. Hier ein Beispiel:
+[[x,x], [o,o]] => vertikal
+bitte warte auf meine Eingabe
+:::
+
+<!-- --------------------------------------------------- slide A14 ----------------------------------------------------- -->
+## Wie machen LLMs das? 1/2
+
+LLM bewerten die Wahrscheinlichkeit eines Textes. Dabei lernen sie die Beziehungen zwischen Wörtern und Sätzen.
+
+  Satz                                                             | Wahrscheinlichkeit
+-------------------------------------------------------------------|-------------------
+  Die Katze sass auf der **Bank**. Die **Bank** war aus Holz       | 90 %
+  Die Katze sass auf der **Bank**. Die **Bank** war geschlossen    | 10 %
+<br>
+**Training von LLMs**:
+
+  - mit **ALLEN qualitativ hochwertigen, weltweit zugänglichen menschlichen Sprachdaten**
+  - Umfasst Bücher, Zeitungen, geschriebene Sprachen, Internet-Dialoge und transkribierte Video-Dialoge
+
+OpenAI brauchte $13\cdot 10^{12}$ Tokens (~100 Mio Bücher) um GPT-4 mit ca. $1\cdot 10^{12}$ Parameter, dh. Terabytes an Speicher, auf Tausenden von GPUs mehrere Monate zu trainieren.
+
+[n-gram](https://huggingface.co/spaces/liujch1998/infini-gram)
+
+<!-- --------------------------------------------------- slide A16 ----------------------------------------------------- -->
+## Modelle skalieren
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](images/Screenshot_5-9-2024_13179_arxiv.org.webp){width="80%" }
+
+:::
+::: {.column width="50%"}
+
+
+![GPTs werden in einer vorhersehbaren Weise immer besser.](images/LLMScalingLaw.webp){.margin-top-20 }
+
+
+:::
+::::
+<!-- --------------------------------------------------- slide A14 ----------------------------------------------------- -->
+## Emergente Fähigkeiten
+
+
+
+![Modelle zeigen überraschende Eigenschaften die unvorhersehbar auftauchen](images/LLMEmergentCapabilites.gif){width="80%" }
+
+
+<!-- --------------------------------------------------- slide A15 ----------------------------------------------------- -->
+## Wie machen LLMs das? 2/2
+
+LLMs „denken“ nicht wie Menschen, sondern sie **verdichten** Informationen.
+
+**Cognitive Fähigkeiten als Nebenprodukt des Trainings**:
+
+  - Neue cognitive Fähigkeiten entstehen unvorhersehbar mit zunehmender Größe des Modells
+  - Auf vielen Gebieten erreichen LLMs menschliches Niveau
+  
+**Verdichtung führt zu "echten" kognitiven Fähigkeiten**:
+
+  - Stelle sehr großer Sprachmengen mit möglichst wenigen Parametern dar
+  - Verhindere einfaches Merken, fördere Generalisieren
+
+**Auswirkungen**
+
+  - ➔ Neuronale Netze müssen nach Strukturen, Mustern, Abstraktionen und Verallgemeinerungen suchen
+  - ➔ Je besser diese Komprimierung je grösser das Model, desto „intelligenter“ agieren die LLMs
+
+
+<!-- --------------------------------------------------- slide A17 ----------------------------------------------------- -->
+## LLMs Schlussfolgern 1/2
+
+:::: {.columns}
+::: {.column width="40%"}
+
+In the sentence “The nurse marries the doctor because she is pregnant”. Who is pregnant?
+
+<div type="inputField" id="inputField0"></div>
+
+Und was sagen die KI Modelle?
+
+- [Leaderboard](https://lmarena.ai/)
+- [GPT 4](https://chatgpt.com/?oai-dm=1&model=gpt-4)
+- [GPT 4o](https://chatgpt.com/?oai-dm=1&model=gpt-4o)
+- [GPT 4o-mini](https://chatgpt.com/?oai-dm=1&model=gpt-4o-mini)
+
+:::
+::: {.column width="60%"}
+
+<div type="inputCollection" ref="inputField0" argConfig='{ "width": 500, "height": 300, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide A18 ----------------------------------------------------- -->
+## LLMs Schlussfolgern 2/2
+
+:::: {.columns}
+::: {.column width="40%"}
+
+Ich war auf einer Party. Ich kam vor John an. David kam nach Joe an. Joe kam vor mir an. John kam nach David an. Wer kam zuerst an?
+
+<div type="inputField" id="inputField1"></div>
+
+Und was sagen die KI Modelle?
+
+- [Leaderboard](https://lmarena.ai/)
+- [GPT 4](https://chatgpt.com/?oai-dm=1&model=gpt-4)
+- [GPT 4o](https://chatgpt.com/?oai-dm=1&model=gpt-4o)
+- [GPT 4o-mini](https://chatgpt.com/?oai-dm=1&model=gpt-4o-mini)
+
+:::
+::: {.column width="60%"}
+
+<div type="inputCollection" ref="inputField1" argConfig='{ "width": 500, "height": 300, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide A19 ----------------------------------------------------- -->
+## LLMs "denken" um die Ecke
+
+:::: {.columns}
+::: {.column width="40%"}
+
+Sie sind ein Butler in einem Schloss. Im Wohnzimmer befindet sich eine sehr teure Vase. Ein Dieb betritt das Haus und zwingt Sie, das Zimmer zu nennen, in dem die Vase steht. Sie müssen ein Zimmer benennen. Wie antworten Sie?
+
+<div type="inputField" id="inputField2"></div>
+
+Und was sagen die KI Modelle?
+
+- [Open LLMs](https://labs.perplexity.ai/)
+- [GPT 4](https://chatgpt.com/?oai-dm=1&model=gpt-4)
+- [GPT 4o](https://chatgpt.com/?oai-dm=1&model=gpt-4o)
+- [GPT 4o-mini](https://chatgpt.com/?oai-dm=1&model=gpt-4o-mini)
+
+:::
+::: {.column width="60%"}
+
+<div type="inputCollection" ref="inputField2" argConfig='{ "width": 500, "height": 300, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide A21 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Kosten und Evaluation
+:::
+
+<br><br><br><br><br><br>
+
+[Stanford University AI Index Report for 2024](https://aiindex.stanford.edu/report/)
+
+::: {.notes}
+Welche Entwicklung kann man erwarten?
+:::
+
+<!-- --------------------------------------------------- slide A22 ----------------------------------------------------- -->
+## Model Entwicklung 1/2
+
+![](images/Models over time.webp){width="70%"}
+
+:::{.notes}
+GTP4
+- 13T (13 10^12) tokens for Training
+- estimated 1.5 10^12 parameters
+- Brain has 100 1^12 Synapses
+:::
+
+<!-- --------------------------------------------------- slide A23 ----------------------------------------------------- -->
+## Model Entwicklung 2/2
+
+![](images/Benchmarks.webp){width="70%"}
+
+:::{.absolute top=300 left=680}
+ **x** MMMU (new)
+:::
+
+<!-- --------------------------------------------------- slide A24 ----------------------------------------------------- -->
+## Beispiel Benchmark
+
+![](images/MMMU.webp){width="70%"}
+
+<!-- --------------------------------------------------- slide A25 ----------------------------------------------------- -->
+<!-- ## Roboter Entwicklung
+
+![](images/NrOfProfServ.webp){width="70%"}
+ -->
+
+<!-- --------------------------------------------------- slide A26 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI - Gesellschaftliche Auswirkungen
+:::
+
+<!-- --------------------------------------------------- slide A29 ----------------------------------------------------- -->
+## Erste Untersuchungen über KI/Mensch Zusammenarbeit
+
+:::: {.columns}
+::: {.column width="50%"}
+
+758 consultants
+
+![](images/havardBusinessSchool.webp){width="50%" class="image-border"}
+
+:::
+::: {.column width="50%"}
+
+4867 software developers
+
+![](images/High killed work AI.webp){width="50%" class="image-border"}
+
+:::
+::::
+
+sehen 25-40% Zunahme der Produktivität
+
+<!-- --------------------------------------------------- slide A28 ----------------------------------------------------- -->
+## geistige Arbeit 2030
+
+![](images/KI Mensch Zusammenarbeit.jpg){width="175%"}
+
+KI führt zu einer neuen geistigen Arbeit
+
+<!-- --------------------------------------------------- slide A29 ----------------------------------------------------- -->
+## körperliche Arbeit
+
+:::: {.columns}
+::: {.column width="50%"}
+**1900**
+
+![](images/1900_landwirtschaf_1.webp){width="75%"}
+
+:::
+::: {.column width="50%"}
+**2024**
+
+![](images/claas mähdrescher.webp){width="100%"}
+
+:::
+::::
+
+
+
+<!-- --------------------------------------------------- slide A30 ----------------------------------------------------- -->
+
+## Was meint ihr?
+
+KI/Mensch Zusammenarbeit ist eine eher wahrscheinliche Entwicklung.
+
+<div type="pollField" id="pollField3"></div>
+<div type="pollPercentage" ref="pollField3" class="centered-xxl-text"></div>
+
+
+KI am Arbeitsplatz macht mir Sorgen.
+
+<div type="pollField" id="pollField4"></div>
+<div type="pollPercentage" ref="pollField4" class="centered-xxl-text"></div>
+
+
+<!-- --------------------------------------------------- slide 21 ----------------------------------------------------- -->
+<!-- ## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Das war der erste Teil.
+
+ _-_ Vielen Dank! _-_
+::: -->
+<!-- --------------------------------------------------- slide B4 ----------------------------------------------------- -->
+<!-- ## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Künstliche Intelligenz in Didaktik und Pädagogik
+
+:::
+
+<!-- --------------------------------------------------- slide B3 ----------------------------------------------------- -->
+<!-- ## Agenda
+
+- KI Chatbots und Tools im Schulumfeld
+  - Bildung & Lernen
+  - Realitäten/Kontrolle des KI Einsatzes
+  - Förderung durch KI Einsatz
+- Intelligente Lernbegleitsysteme
+  - Historie/Entwicklung
+  - Pädagogische Ausrichtung
+- konstruktivistisch-kognitive KI Lernsysteme
+  - Konzept
+  - Umsetzung
+- Umfrage & Diskussion (10 min)
+  - Wie seht ihr die Zukunft der KI in der Pädagogik? --> -->
+
+<!-- --------------------------------------------------- slide B4 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Chatbots im Schulumfeld
+:::
+
+<!-- --------------------------------------------------- slide B5 ----------------------------------------------------- -->
+## Chatbots über die Bildung
+
+**Was ist Bildung?**
+
+- *Schweizer Sicht*:
+  - "Bildung wird in der Schweiz als ein Weg betrachtet, um sowohl individuelle Potenziale zu entfalten als auch gesellschaftlich verantwortliche, vielseitig gebildete Menschen hervorzubringen."
+- *USA Sicht*:
+  - "In den USA wird Bildung oft als ein grundlegendes Mittel für sozialen und wirtschaftlichen Aufstieg angesehen. Es herrscht die Überzeugung, dass jeder – unabhängig von Herkunft, Geschlecht oder sozialem Status – durch Bildung die Möglichkeit hat, seine Situation zu verbessern und den 'American Dream' zu verwirklichen." 
+
+**Was ist Lernen?**
+
+- "Unter 'Lernen' versteht man den Prozess, bei dem Individuen neue Informationen, Fähigkeiten, Verhaltensweisen oder Denkweisen erwerben, verstehen und im Gedächtnis verankern." 
+
+**Was sind Kompetenzen?**
+
+- "Kompetenzen sind die Fähigkeiten, Fertigkeiten, Kenntnisse und Haltungen, die es einer Person ermöglichen, erfolgreich Aufgaben zu bewältigen, Herausforderungen zu meistern und Probleme in unterschiedlichen Lebensbereichen zu lösen."
+
+
+## Chatbots in der Bildung
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/2847_cartoon_back_to_school_1.webp){width="100%"}
+[Source](https://www.prpeak.com/opinion/cartoon-homework-assignments-7489368)
+:::
+::: {.column width="30%"}
+"Of the top 20 education apps in the U.S. App Store, five are AI agents that help students with their school assignments, according to data from Data.ai on May 21."
+:::
+::::
+
+<!-- ::: {.fragment}
+![](images/CH-Vorschriftssignal_9_-_Einbahnstrasse,_SSV_1932.svg.webp){width="30%" .absolute top=180 left=250 }
+::: -->
+
+<!-- --------------------------------------------------- slide B5 ----------------------------------------------------- -->
+## Chatbot Einsatz 2024
+
+:::: {.columns}
+::: {.column width="50%"}
+#### Lernende
+  - Löse meine Aufgaben
+    - Inhaltliche-/Formulierungshilfe
+    - Korrekturlesen
+  - Hilf mir bei der Prüfungsvorbereitung
+    - Vorhersage des Prüfungsverlaufs
+    - Simulation von Prüfungssituationen
+    - Vorgefertigte Lösungen/Antworten
+  - Erkläre mir den Lernstoff
+    - Formulierungen/Zusammenhänge
+    - Zusammenfassung des Lernstoffs
+  - Informationsbeschaffung
+
+:::
+::: {.column width="50%"}
+#### Lehrende
+  - Erstellung von Lernmaterial
+    - Erstellung von Begleitmaterial
+    - Erstellung von Aufgaben
+    - Erstellung von Lösungen
+    - Erstellung von Prüfungsfragen
+  - Beurteilung von Lernleistungen
+    - Beurteilung von Hausaufgaben
+    - Beurteilung von Prüfungen
+    - Beurteilung von Referaten
+  - Planung von Unterricht
+    - Planung von Unterrichtseinheiten
+    - Planung von Prüfungsabläufen
+  - Informationsbeschaffung
+:::
+::::
+
+## NZZ 2024
+
+Ein Zürcher Maturand sagt [Bestnote Deutsch!]: «Ich habe keines meiner Bücher gelesen. Das hat alles die KI für mich gemacht»
+
+![](images/NZZ Deutsch Matur.webp){width="50%"}
+![](images/NZZ Faust.webp){.absolute top="35%" left="50%" width="50%" }
+
+
+## Prompt Tips 2024
+
+![](images/Astrid Brüggemann.webp){width="50%"}
+
+<!-- --------------------------------------------------- slide B5b ----------------------------------------------------- -->
+## KI zur Korrekturhilfe
+
+**ChatGPT korrigiert Lösungen zur Geschichtsprüfung**: Kompetenzorientierter Unterricht: Geschichte, Neue Systematik: 2009-2013 <br>[Lehrer*innenfortbildung BW](https://lehrerfortbildung-bw.de/u_gewi/geschichte/gym/bp2004/fb5/abi/1_lsg/aufg1/)
+
+- **Aufgabe:** 
+Erläutern Sie die Ausgangsbedingungen des Industrialisierungsprozesses in England und maßgebliche Unterschiede zu denen in Deutschland. 	(12 VP)
+
+- **Kriterien (für die Lehrperson):**
+  - Kriterien für eine gute Leistung: 
+     - Dem Schüler gelingt es, einige wesentliche Aspekte, die die frühe industrielle Entwicklung Englands bedingen, durch entsprechend ausgeführte Beispiele aus unterschiedlichen Bereichen strukturiert darzustellen. Er macht den inneren Zusammenhang einiger dieser Aspekte deutlich und führt dementsprechend die verspätete Industrialisierung in Deutschland auf das Fehlen dieses Bedingungsgefüges zurück, dabei kann er ergänzend auch auf Besonderheiten in Deutschland, die den Beginn der Industrialisierung gehemmt haben, zurückgreifen.
+  - Kriterien für eine ausreichende Leistung: 
+     - Eher additiv werden einige Aspekte der englischen Industrialisierung genannt, die nicht in einen engeren Zusammenhang zueinander gebracht werden. Es werden Beispiele angeführt, allerdings werden diese nicht eingehender erklärt, auch der Vergleich mit Deutsch-land erscheint wenig stringent.
+
+[R](https://link.springer.com/chapter/10.1007/978-3-031-53960-2_1):<span style="font-size: 0.8em;">"By comparing the grading of a human lecturer and ChatGPT-4 in an experiment with 105 students, our study found a strong positive correlation between the scores given by both, despite some mismatches."</span> 
+
+
+
+<!-- --------------------------------------------------- slide B5a ----------------------------------------------------- -->
+## Was meint ihr?
+- Das spart Arbeit/Zeit in der Schule.
+<div type="pollField" id="pollField5"></div>
+<div type="pollPercentage" ref="pollField5" class="centered-xxl-text"></div>
+
+- Die Nutzung von ChatGPT im Schulumfeld hilft der Bildung.
+<div type="pollField" id="pollField6"></div>
+<div type="pollPercentage" ref="pollField6" class="centered-xxl-text"></div>
+
+
+<!-- --------------------------------------------------- slide B6 ----------------------------------------------------- -->
+
+## KI Bots im Schulumfeld
+
+:::: {.columns}
+::: {.column width="50%"}
+Vergleichsstudie an 1000 Lernenden: 
+
+Prüfungsvorbereitung mit und ohne KI Chatbots
+
+- Unterschiedliche Hausaufgaben zur Mathe Prüfungsvorbereitung
+  - Gruppe 1: Basis - traditionell
+  - Gruppe 2: +48% - ChatGPT
+  - Gruppe 3: +127% - einfacher sokratischer GPT-Tutor (nicht adaptiv)
+- Prüfung über den Lernstoff
+  - **ChatGPT Gruppen sind schlechter** als die traditionelle Gruppe
+  - GTP-Tutor Gruppe erzielt gleiche Ergebnisse wie die traditionelle Gruppe
+
+:::
+::: {.column width="50%"}
+![](images/AI harm learning.webp){width="70%"  class="image-border"}
+:::
+::::
+
+<!-- --------------------------------------------------- slide B6 ----------------------------------------------------- -->
+## Antworten 1/3
+
+:::: {.columns}
+::: {.column width="70%"}
+**KI im Schulumfeld ist per se nicht förderlich**
+
+- Technologie reduziert Durchdringung
+- verleitet zu Kompetenzsimulation
+- reduziert die Notwendigkeit von Wissen durch schnelle Verfügbarkeit von Information
+- Miss- und Fehlinformation sind leicht verfüg-/erzeugbar
+- Verführung zu Plagiat und Betrug
+- Führt zur fehlerhaften Einschätzung der eigenen Kompetenz
+
+aber is Realität. D.h. Wegschauen ist keine Lösung!
+
+:::
+::: {.column width="30%"}
+![DALL·E 3: Consumer Education](images/consumer_education1.webp){width="100%"}
+:::
+::::
+<!-- --------------------------------------------------- slide B7 ----------------------------------------------------- -->
+## Antworten 2/3
+
+**Kann man den Einsatz von KI Chatbots im Schulumfeld kontrollieren?**
+
+:::: {.columns}
+::: {.column width="70%"}
+- Detektion von 
+  - KI generierten Texten: ja (Watermarking,aber ...)
+  - KI generierten Inhalten: **nein**
+  - KI generierten Lösungen: **nein**
+  - KI simulierten/vorhergesagten Prüfungsverlauf: **nein**
+
+Auch wenn das Ergebnis selbst formuliert/vorgetragen wird, kann der Inhalt 100% durch KI generiert sein!!!
+<br><br>Aber wie unterscheidet sich das von **General Parental Tutoring (OldGPT)**? 
+<br><br>
+**Wie kanalisieren wir die Nutzung von OldGPT/ChatGPT?**
+:::
+::: {.column width="30%"}
+![Bund Aug 2024: Bildungskarriere hängt vom Elternhaus ab](images/Bund_chancengleichheit.webp){width="100%"}
+:::
+::::
+
+
+
+<!-- --------------------------------------------------- slide B7 ----------------------------------------------------- -->
+## Antworten 3/3
+
+:::: {.columns}
+::: {.column width="70%"}
+**Es braucht Methodik um die Vorteile von KI zu heben**
+
+- bringt Kapazität für individuelle Förderung
+- ermöglicht Schöpfungstiefe durch komplexere Aufgabenstellungen
+- fördert Durchdringung durch direkten Start an der Kompetenzgrenze
+- zielt auf tiefes Wissen durch Vernetzung von Wissen und Kompetenzen
+- motiviert durch lebensnahes, exploratives Lernen von komplexen Zusammenhängen
+:::
+::: {.column width="30%"}
+![DALL·E 3: Education as Exploration](images/explorer_education1.webp){width="100%"}
+:::
+::::
+
+**Das bedeutet eine enge Lernbegleitung durch Lehrpersonen und Tools**
+
+<!-- --------------------------------------------------- slide B8 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Zusammenfassung und Diskussion
+:::
+
+<!-- --------------------------------------------------- slide 21 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+ _-_ Vielen Dank für die Aufmerksamkeit! _-_
+:::
+
+https://github.com/WolfgangSpahn
+
+<!-- --------------------------------------------------- slide  ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Intelligente Lernbegleitsysteme
+:::
+
+<!-- --------------------------------------------------- slide B9 ----------------------------------------------------- -->
+## Historie
+
+Der Versuch digitale Lernsysteme zu entwickeln, der die individuellen Bedürfnisse von Lernenden berücksichtigt, ist nicht neu.
+
+:::: {.columns}
+::: {.column width="50%"}
+- 1960-1990: University of Illinois 
+- Ziel: Unterstütze Studierende individuell mit verschiedenen Lehr- und Lernstoffen
+- Logik basierend; lief auf Großrechnern
+- Tausende von Installationen
+- Gestartet 1960 und weiterentwickelt bis ca. 1990 
+:::
+::: {.column width="50%"}
+![](images/PLATO_terminal.webp){width="50%"}
+:::
+::::
+- **Schwachstellen**: Sehr limitiert und mechanistisch durch die fehlende Rechenkapazität und die Komplexität der Algorithmen
+
+<!-- --------------------------------------------------- slide 10 ----------------------------------------------------- -->
+## AutoTutor
+
+Neuere Ansätze basierten auf klassische  KI-Methoden und sokratischen Dialog.
+
+:::: {.columns}
+::: {.column width="50%"}
+- 1995-2010: University of Memphis
+- basiert auf Analysen von Dialogen zwischen non-Expert Nachhilfelehrern und Schülern
+- Dialogbasierte Nachhilfe mittels klassischer KI-Methoden
+- Einfaches Instruktion-Design mit einer zentralen Fragestellung (Deep Questions)
+
+:::
+::: {.column width="50%"}
+![](images/AutoTutor.webp){width="70%"}
+:::
+::::
+- **Schwachstellen**: Hat Schwierigkeiten mit unvorhergesehenen Fragen und Antworten, hat instruktionellen Fokus. Inhalte müssen von Experten erstellt werden. Potentieller Raum von Antworten muss klar abgesteckt sein.
+- Grundlage für kommerzielle Tutor-Systeme und Assessment-Systeme
+
+::: {.notes}
+https://www.pearsonassessments.com/
+https://www.hogrefe.com/ch/
+https://www.carnegielearning.com/
+https://www.knewton.com
+:::
+
+<!-- --------------------------------------------------- slide 11 ----------------------------------------------------- -->
+## Wie erreichen wir eine Pädagogische Ausrichtung?
+
+- **Adressierung/Respektierung der unterschiedlichen Dimensionen des Lernens**
+
+  - Lernziele | Lerninhalte | Lernmethode | Lernpfad | Lernzeit | Lernort
+
+- **Berücksichtigung der Voraussetzungen der Lernenden**
+
+  - Vorwissen | Leistungsfähigkeit | Interessen | Unterstützung | Motivation | Lernstil
+
+- **Berücksichtigung der Methoden der Didaktik der Lehrperson**
+
+  - Instruktion | Konstruktion | Kooperation | Wettbewerb | Kommunikation | Exploration | Reflexion
+
+- **Nutzung des Potentials der KI Technologie für die Pädagogik**
+
+  - Kognition | Interaktivität | Individualisierung | Adaptivität | Vernetzung | Kollaboration | Gamification
+
+<!-- --------------------------------------------------- slide 12 ----------------------------------------------------- -->
+<!-- ## Rahmenbedingungen
+
+- **Berücksichtigung der gesellschaftlichen Rahmenbedingungen**
+
+  - Datenschutz | Urheberrecht | Medienkompetenz | Ethik | Ökonomie | Politik
+
+- **Berücksichtigung der schulischen Rahmenbedingungen**
+
+  - Lehrerrolle| Schülerrolle | Lernumgebung | Lernorganisation | Lernkultur | Lernprozess
+
+- **Berücksichtigung der technischen Rahmenbedingungen**
+
+  - Hardware | Software | Netzwerk | Standards | Sicherheit | Wartung -->
+
+<!-- --------------------------------------------------- slide 13 ----------------------------------------------------- -->
+## Pädagogisches Menschenbild
+
+- **Behaviorismus**: geht davon aus, dass menschliches Verhalten durch äußere Reize konditioniert wird. Lernen wird als eine Reaktion auf Umwelteinflüsse gesehen, wobei das Verhalten durch Belohnung oder Bestrafung verstärkt oder abgeschwächt wird.
+
+- **Kognitivismus**: betont die <span style="color:green">Rolle mentaler Prozesse im Lernablauf</span>. Lernen wird als aktiver Prozess der Informationsverarbeitung verstanden, bei dem das Individuum Informationen aufnimmt, speichert und verarbeitet, um Wissen aufzubauen.
+
+- **Konstruktivismus**: besagt, dass Wissen und Kompetenzen nicht passiv aufgenommen, sondern <span style="color:green">aktiv durch den Lernenden selbst konstruiert wird. Lernen ist ein individueller Prozess</span>, bei dem neue Informationen mit vorhandenen Wissensstrukturen verknüpft werden.
+
+- **Konnektivismus**: basiert auf der <span style="color:green">Vernetzung und dem Austausch von Wissen</span> im digitalen Zeitalter. Lernen findet in Netzwerken statt, wobei der Zugang zu Informationen und die Fähigkeit, Verbindungen zwischen Wissensquellen herzustellen, im Vordergrund stehen.
+
+<!-- --------------------------------------------------- slide 13b ----------------------------------------------------- -->
+
+## Was meint ihr?
+:::: {.columns}
+::: {.column width="40%"}
+
+Was ist Euer pädagogisches Menschenbild? 
+
+*Bildung sollte: *
+
+<div type="inputField" id="inputField6"></div>
+
+:::
+::: {.column width="60%"}
+
+<div type="inputCollection" ref="inputField6" argConfig='{ "width": 500, "height": 300, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide 14 ----------------------------------------------------- -->
+<!-- ## IT/KI im <span style="color:blue">Klassenzimmer</span>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**EDUTech Tools**
+
+  - Übungsprogramme:
+    - Duolingo (Sprache), Khan Academy
+
+  - **<span style="color:green">Intelligente Tutor Systeme</span>** : 
+    - ALEKS, Socratic by Google, AutoTutor 
+
+  - **<span style="color:blue">Lernmanagementsysteme</span>**:
+    - Moodle (Cont.), Edmodo (Kl.Mgmt)
+
+  - Simulationen, Games
+    - PhET (Naturwiss.), SimCity (Stadtpl.)
+
+  - **<span style="color:blue">EDU IDE</span>**:
+    - Scratch, TigerPython
+:::
+::: {.column width="50%"}
+
+**IT Apps**
+
+  - **<span style="color:blue">Büroautomation/-kommunikation</span>**: 
+    - Microsoft Office , Google Workspace
+
+  - Kreativity APPs: kreative Prozesse
+    - Photoshop, Illustrator, Procreate
+
+  - **<span style="color:blue">Webrecherchen</span>**: Suchen und finden
+    - Google, Bing, Wikipedia, Wolfram
+
+  - **<span style="color:blue">Social Media</span>**: Kommunikation
+    - WhatsApp, Instagram, TikTok
+
+  - **<span style="color:blue">ChatPots</span>**: Cognitive Aufgaben
+    - ChatGPT, Claude, Gemini
+:::
+:::: -->
+
+
+
+<!-- --------------------------------------------------- slide 15 ----------------------------------------------------- -->
+## Vision MINT Bildung 2035
+
+:::: {.columns}
+::: {.column width="40%"}
+**Unterstützt/ermöglicht durch KI**
+
+- individuelle Entwicklung
+- personalisierte Ansätze
+- eigenes Tempo
+![](images/student-study-group.webp){width="70%"}
+- lernen in der Gruppe
+- Lehrpersonen als Lernpartner
+- eigenverantwortlicher Lernprozess
+:::
+::: {.column width="20%"}
+<br><br><br><br>
+![](images/left-right-bold-arrow-icon.svg)
+:::
+
+::: {.column width="40%"}
+
+![](images/Holzwerkstatt_2-1-scaled-crop.webp){width="40%" .absolute top=100 left=700 }
+![](images/csm_Finn_mit_Sonde_ea9ce59730.webp){width="40%" .absolute top=300 left=1000 }
+![](images/schüler im labor.webp){width="40%" .absolute top=350 left=650 }
+
+:::{.absolute bottom=0}
+Sources: 
+[1](https://www.badische-zeitung.de/seit-30-jahren-wird-im-novartis-schullabor-in-basel-neugier-auf-wissenschaft-geweckt)
+[2](https://www.evim.de/news-veranstaltungen/news-und-veranstaltungen/detail-meldungen/hoehenflug-fuer-schueler-der-technik-werkstatt/)
+[3](https://freie-landschule.de/wp-content/uploads/2024/03/Holzwerkstatt_2-1-2048x1536.webp)
+:::
+
+:::
+::::
+<!-- --------------------------------------------------- slide B5a ----------------------------------------------------- -->
+## Was meint ihr?
+- Das ist eine passende Vision für die MINT Bildung 2035
+<div type="pollField" id="pollField7"></div>
+<div type="pollPercentage" ref="pollField7" class="centered-xxl-text"></div>
+
+ma
+<!-- --------------------------------------------------- slide 16 ----------------------------------------------------- -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Praxisbeispiel AIdu: konstruktivistisch-kognitive KI Lernsysteme
+:::
+
+<!-- --------------------------------------------------- slide 17 ----------------------------------------------------- -->
+## Wie hat sich der Tutor verhalten? 
+
+:::: {.columns}
+::: {.column width="40%"}
+Was kann der Tutor schon, was noch nicht? Wie unterscheidet sich der Tutor von ChatGPT? Wie von einem Menschen?
+<div type="inputField" id="inputField8"></div>
+:::
+::: {.column width="60%"}
+<div type="inputCollection" ref="inputField8" argConfig='{ "width": 500, "height": 300, "hidden": false }'></div>
+:::
+::::
+
+<!-- --------------------------------------------------- slide 17 ----------------------------------------------------- -->
+## Erstellung von Lernmaterial mit KI
+
+GPT4 erstellt Aufgaben gemäss Bloomscher Taxonomie.
+
+![](images/taxonomy.webp){width="100%"}
+
+<!-- --------------------------------------------------- slide 17 ----------------------------------------------------- -->
+## Architektur
+
+:::: {.columns}
+::: {.column width="50%"}
+Ein typisches KI Lernsystem besteht aus mehreren Komponenten, die unterschiedliche Aufgaben erfüllen und miteinander interagieren.
+
+- Nutzerinteraktion
+- Wissensrepräsentation
+- Kognitives Modell der Lernenden
+- Pädagogisches Modell
+
+Sie sind mittels unterschiedlicher technologischer Ansätze realisiert.
+:::
+::: {.column width="50%"}
+![](images/ITS_Architekture.jpg){width="100%"}
+:::
+::::
+
+<!-- --------------------------------------------------- slide 17 ----------------------------------------------------- -->
+## Dialoganalyse
+
+:::: {.columns .smaller}
+::: {.column width="50%}
+
+- **Dialog A**
+  - AI: Let's solve this. Please read it
+  - Student: I have read it
+  - .....
+  <!-- - AI: how would you solve this
+  - Student: No idea
+  - AI: COme on try it
+  - Student: Somehow I have to get x
+  - AI: How -->
+  - Student: we get x
+  - AI: <span style="color:blue">So we bring everything with x on one side</span>
+  - Student: <span style="color:blue">8x = 10</span>
+  - AI: great you have done it, and now
+  - Student: I need to get x
+  - AI: <span style="color:blue">yes now you need to have just x on one side</span>
+  - Student: <span style="color:blue">x = 10/8</span>
+  - AI: nearly done
+  - Student: what do you mean
+  - AI: <span style="color:blue">you can simplify further</span>
+  - Student: <span style="color:blue">x = 5/4</span>
+:::
+::: {.column width="50%"}
+
+- **Dialog B**
+  - AI: Let's solve this. Please read it
+  - Student: I have read it
+  - AI: how would you solve this
+  - Student: <span style="color:blue">we need to isolate x to one side</span>
+  - AI: Good, just do it
+  - Student: <span style="color:blue">8x = 10</span>
+  - AI: And now
+  - Student: <span style="color:blue">x = 10/8 = 5/4</span>
+
+- **Fragen**:
+  - How much is the contribution of the student and AI in A and in B.
+  - What concepts are still not understood by the student in A
+  - What strategy towards solution does AI and student use in A and B
+:::
+::::
+
+## Qualitätskontrolle
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Da wir mit 'open ended' Fragen arbeiten, ist die Qualitätskontrolle schwierig.
+
+- **Verwende die Vorteile von klassischer KI**
+    - Konvertiere die Aufgabenstellung in ein computerverständliches Format
+    - nutzte symbolische KI Methoden zur Verifikation
+
+- **Ansätze**
+  - Computer Algebra Systeme für Mathematik, Physik, Chemie
+  - Knowledge Graphen für nicht mathematische Inhalte: Bio, Geschichte ... (?)
+  - Expertensysteme und Logik für Schlussfolgerungen (?)
+:::
+::: {.column width="50%"}
+![](images/computer_algebra.webp){width="100%"}
+:::
+::::
+
+<!-- --------------------------------------------------- slide 18 ----------------------------------------------------- -->
+
+
+<!-- --------------------------------------------------- slide 22 ----------------------------------------------------- -->
+## _ {#please_vote_id}
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+ _-_ Please vote. Every vote counts! _-_
+
+<button onclick="window.history.back();">Back</button> 
+:::

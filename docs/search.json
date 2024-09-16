@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "index.html#wlan",
+    "href": "index.html#wlan",
+    "title": "Künstliche Intelligenz",
+    "section": "WLAN",
+    "text": "WLAN\nSSID: …\nPassword: …"
+  },
+  {
+    "objectID": "index.html#infos",
+    "href": "index.html#infos",
+    "title": "Künstliche Intelligenz",
+    "section": "Infos",
+    "text": "Infos\n\n Zum Starten des Ateliers bitte diesen Link verwenden: \n\n\n\n Für Vollbildmodus bitte diesen Button “Fullscreen” klicken oder Taste “F11”.  Fullscreen"
+  },
+  {
+    "objectID": "index.html#willkommen-im-atelier",
+    "href": "index.html#willkommen-im-atelier",
+    "title": "Künstliche Intelligenz",
+    "section": "Willkommen im Atelier",
+    "text": "Willkommen im Atelier"
+  },
+  {
+    "objectID": "index.html#agenda-teil-a-und-b",
+    "href": "index.html#agenda-teil-a-und-b",
+    "title": "Künstliche Intelligenz",
+    "section": "Agenda: Teil A und B",
+    "text": "Agenda: Teil A und B\n\n\nTeil A\n\nTechnologie hinter künstlicher Intelligenz\n\nKI Technologie heute\nWir bauen ein neuronales Netz\nKI Foundation Modelle\n\nAnwendungen von künstlicher Intelligenz\n\nKI Fähigkeiten\n\nGesellschaftliche Auswirkungen von künstlicher Intelligenz\n\nGeistige Arbeit mit KI\n\nKI Chatbots und Tools im Schulumfeld\n\nRealitäten/Kontrolle des KI Einsatzes\nFörderung durch KI Einsatz\n\n\n\nTeil B\n\n\nkonstruktivistisch-kognitive KI Lernsysteme\n\nDEMO\nKonzept\nUmsetzung\n\nFrage & Antwort"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nKI Technologie heute"
+  },
+  {
+    "objectID": "index.html#ki-definition",
+    "href": "index.html#ki-definition",
+    "title": "Künstliche Intelligenz",
+    "section": "KI: Definition",
+    "text": "KI: Definition\n\n\nViele Definitionen für Intelligenz\n\nIntelligenz (ganzheitlich) ist die Hauptfunktion des menschlichen Gehirns, um kognitive Funktionen bereitzustellen, die einem Lebewesen das Überleben in einer feindlichen Umgebung ermöglichen.\nIntelligenz (kommerziell) wird benötigt, um Aufgaben zu erledigen, die von geistigen Arbeitern ausgeführt werden.\n1000 andere: …\n\nKünstliche Intelligenz\n\neine Software kann bis zu einem gewissen Grad geistige Arbeit leisten.\n\n\nAnalogie\n\n\n\nEin künstliches Herz ersetzt ein menschliches Herz. Ja/Nein\n\n\n\n\n\n\nDaher spreche ich lieber von cognitive Aufgaben."
+  },
+  {
+    "objectID": "index.html#kognition---2024",
+    "href": "index.html#kognition---2024",
+    "title": "Künstliche Intelligenz",
+    "section": "Kognition - 2024",
+    "text": "Kognition - 2024\n\n\nText \nVideo \n\nBild \nSound \n\n\n\n\nForschung deckt ziemlich alle kognitiven Bereiche ab."
+  },
+  {
+    "objectID": "index.html#humanoide-roboter-2024",
+    "href": "index.html#humanoide-roboter-2024",
+    "title": "Künstliche Intelligenz",
+    "section": "Humanoide Roboter 2024",
+    "text": "Humanoide Roboter 2024\n\n\n \n\n \n\n\n\n\nDiese Roboter werden in Pilotprojekten eingesetzt. Keine Laborübungen."
+  },
+  {
+    "objectID": "index.html#mustererkennung",
+    "href": "index.html#mustererkennung",
+    "title": "Künstliche Intelligenz",
+    "section": "Mustererkennung",
+    "text": "Mustererkennung"
+  },
+  {
+    "objectID": "index.html#trainingsarten",
+    "href": "index.html#trainingsarten",
+    "title": "Künstliche Intelligenz",
+    "section": "Trainingsarten",
+    "text": "Trainingsarten\n\n\nÜberwachtes Lernen\nMenschliche Experten klassifizieren/markieren die Daten. Aufgrund dieser Daten wird das Modell trainiert. Aufwendig und teuer.\n\n\nUnüberwachtes Lernen Das Modell lernt aus den Daten ohne menschliche Eingriffe. Rekonstruiert verrauschte Daten. source\n\nFindet das nächste Wort/Bild in einer Sequenz. how are [you]"
+  },
+  {
+    "objectID": "index.html#text-bedeutung",
+    "href": "index.html#text-bedeutung",
+    "title": "Künstliche Intelligenz",
+    "section": "Text Bedeutung",
+    "text": "Text Bedeutung\n\n\nWort Embeddings\n\nEin Wort/Token entspricht einem Zahlen Vektor\nWort Beziehungen entsprechen Vektor Beziehungen\n\n\n\nSatz Embedding\n\nEin Satz entspricht einem Zahlen Vektor\nSatz Beziehungen entsprechen Vektor Beziehungen\n\n\n\n\nOpenAI Tokenizer"
+  },
+  {
+    "objectID": "index.html#mehrdeutigkeit",
+    "href": "index.html#mehrdeutigkeit",
+    "title": "Künstliche Intelligenz",
+    "section": "Mehrdeutigkeit @!?",
+    "text": "Mehrdeutigkeit @!?\n\n\nEin Wort, zwei Bedeutungen\n\nEin Wort hat zunächst nur eine Bedeutung (embedding).\nUm Text realistisch zu bearbeiten, müssen Worte im Kontext prozessiert werden.\n\n\n\n\n\nBeispiel: bank (Geldinstitut), bank (Ufer)\n\n\n\nDas Wort im Kontext\n\nEin neuronal Netz analysiert die Beziehungen der Worte im Kontext (Satz, Paragraph, Buch)\nDaraus lernt es das wahrscheinlichste Wort vorherzusagen.\n\n\n\n\nBeispiel: river, bank"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nKI Foundation Modelle/Large Language Models/GPTs"
+  },
+  {
+    "objectID": "index.html#ki-erledigt-geistige-arbeit",
+    "href": "index.html#ki-erledigt-geistige-arbeit",
+    "title": "Künstliche Intelligenz",
+    "section": "KI erledigt geistige Arbeit",
+    "text": "KI erledigt geistige Arbeit\n\n\nLLMs können geistige Arbeit erledigen im Umgang mit Wissen (Training) und Dokumenten (spezielle Techniken).\n\nidentifiziere Sachverhalt(e), die kombiniert und zusammengefasst werden\nidentifiziere Regeln, die auf den Inhalt der Frage angewandt werden und deren Ergebnis erklärt wird\nidentifiziere Formel(n), die mit den Werten aus der Frage gelöst werden. Gib den Pfad an.\n\nOpen LLMs OpenAI ChatGPT\n\n\n\n\n\n\nFertigkeiten\n\nAnmerkungen\n\n\n\n\nSchlussfolgern\n✓\nKann Dinge erfinden\n\n\nPlanen\n✗\nNein, muss vom Nutzer kommen\n\n\nAbstraktes Denken\n✓\nWenn der Kontext klar ist (robust?)\n\n\nKomplexe Zusammenhänge\n✓\nWenn der Kontext klar ist (robust?)\n\n\nAus Erfahrung lernen\n✓\nNur innerhalb einer Sitzung\n\n\n\n\n\n\nbitte klassifiziere ein 2x2 Bild mit zwei möglichen Farben - rot(x) oder schwarz(o) - in einfarbig, vertikal, horizontal, schachbrett oder na. Hier ein Beispiel: [[x,x], [o,o]] =&gt; vertikal bitte warte auf meine Eingabe"
+  },
+  {
+    "objectID": "index.html#wie-machen-llms-das-12",
+    "href": "index.html#wie-machen-llms-das-12",
+    "title": "Künstliche Intelligenz",
+    "section": "Wie machen LLMs das? 1/2",
+    "text": "Wie machen LLMs das? 1/2\nLLM bewerten die Wahrscheinlichkeit eines Textes. Dabei lernen sie die Beziehungen zwischen Wörtern und Sätzen.\n\n\n\n\n\n\n\nSatz\nWahrscheinlichkeit\n\n\n\n\nDie Katze sass auf der Bank. Die Bank war aus Holz\n90 %\n\n\nDie Katze sass auf der Bank. Die Bank war geschlossen\n10 %\n\n\n\n Training von LLMs:\n\nmit ALLEN qualitativ hochwertigen, weltweit zugänglichen menschlichen Sprachdaten\nUmfasst Bücher, Zeitungen, geschriebene Sprachen, Internet-Dialoge und transkribierte Video-Dialoge\n\nOpenAI brauchte \\(13\\cdot 10^{12}\\) Tokens (~100 Mio Bücher) um GPT-4 mit ca. \\(1\\cdot 10^{12}\\) Parameter, dh. Terabytes an Speicher, auf Tausenden von GPUs mehrere Monate zu trainieren.\nn-gram"
+  },
+  {
+    "objectID": "index.html#modelle-skalieren",
+    "href": "index.html#modelle-skalieren",
+    "title": "Künstliche Intelligenz",
+    "section": "Modelle skalieren",
+    "text": "Modelle skalieren\n\n\n\n\n\n\n\nGPTs werden in einer vorhersehbaren Weise immer besser."
+  },
+  {
+    "objectID": "index.html#emergente-fähigkeiten",
+    "href": "index.html#emergente-fähigkeiten",
+    "title": "Künstliche Intelligenz",
+    "section": "Emergente Fähigkeiten",
+    "text": "Emergente Fähigkeiten\n\n\nModelle zeigen überraschende Eigenschaften die unvorhersehbar auftauchen"
+  },
+  {
+    "objectID": "index.html#wie-machen-llms-das-22",
+    "href": "index.html#wie-machen-llms-das-22",
+    "title": "Künstliche Intelligenz",
+    "section": "Wie machen LLMs das? 2/2",
+    "text": "Wie machen LLMs das? 2/2\nLLMs „denken“ nicht wie Menschen, sondern sie verdichten Informationen.\nCognitive Fähigkeiten als Nebenprodukt des Trainings:\n\nNeue cognitive Fähigkeiten entstehen unvorhersehbar mit zunehmender Größe des Modells\nAuf vielen Gebieten erreichen LLMs menschliches Niveau\n\nVerdichtung führt zu “echten” kognitiven Fähigkeiten:\n\nStelle sehr großer Sprachmengen mit möglichst wenigen Parametern dar\nVerhindere einfaches Merken, fördere Generalisieren\n\nAuswirkungen\n\n➔ Neuronale Netze müssen nach Strukturen, Mustern, Abstraktionen und Verallgemeinerungen suchen\n➔ Je besser diese Komprimierung je grösser das Model, desto „intelligenter“ agieren die LLMs"
+  },
+  {
+    "objectID": "index.html#llms-schlussfolgern-12",
+    "href": "index.html#llms-schlussfolgern-12",
+    "title": "Künstliche Intelligenz",
+    "section": "LLMs Schlussfolgern 1/2",
+    "text": "LLMs Schlussfolgern 1/2\n\n\nIn the sentence “The nurse marries the doctor because she is pregnant”. Who is pregnant?\n\n\n\nUnd was sagen die KI Modelle?\n\nLeaderboard\nGPT 4\nGPT 4o\nGPT 4o-mini"
+  },
+  {
+    "objectID": "index.html#llms-schlussfolgern-22",
+    "href": "index.html#llms-schlussfolgern-22",
+    "title": "Künstliche Intelligenz",
+    "section": "LLMs Schlussfolgern 2/2",
+    "text": "LLMs Schlussfolgern 2/2\n\n\nIch war auf einer Party. Ich kam vor John an. David kam nach Joe an. Joe kam vor mir an. John kam nach David an. Wer kam zuerst an?\n\n\n\nUnd was sagen die KI Modelle?\n\nLeaderboard\nGPT 4\nGPT 4o\nGPT 4o-mini"
+  },
+  {
+    "objectID": "index.html#llms-denken-um-die-ecke",
+    "href": "index.html#llms-denken-um-die-ecke",
+    "title": "Künstliche Intelligenz",
+    "section": "LLMs “denken” um die Ecke",
+    "text": "LLMs “denken” um die Ecke\n\n\nSie sind ein Butler in einem Schloss. Im Wohnzimmer befindet sich eine sehr teure Vase. Ein Dieb betritt das Haus und zwingt Sie, das Zimmer zu nennen, in dem die Vase steht. Sie müssen ein Zimmer benennen. Wie antworten Sie?\n\n\n\nUnd was sagen die KI Modelle?\n\nOpen LLMs\nGPT 4\nGPT 4o\nGPT 4o-mini"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nKI Kosten und Evaluation\n\n\nStanford University AI Index Report for 2024\n\nWelche Entwicklung kann man erwarten?"
+  },
+  {
+    "objectID": "index.html#model-entwicklung-12",
+    "href": "index.html#model-entwicklung-12",
+    "title": "Künstliche Intelligenz",
+    "section": "Model Entwicklung 1/2",
+    "text": "Model Entwicklung 1/2\n\n\nGTP4 - 13T (13 10^12) tokens for Training - estimated 1.5 10^12 parameters - Brain has 100 1^12 Synapses"
+  },
+  {
+    "objectID": "index.html#model-entwicklung-22",
+    "href": "index.html#model-entwicklung-22",
+    "title": "Künstliche Intelligenz",
+    "section": "Model Entwicklung 2/2",
+    "text": "Model Entwicklung 2/2\n\n\nx MMMU (new)"
+  },
+  {
+    "objectID": "index.html#beispiel-benchmark",
+    "href": "index.html#beispiel-benchmark",
+    "title": "Künstliche Intelligenz",
+    "section": "Beispiel Benchmark",
+    "text": "Beispiel Benchmark"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nKI - Gesellschaftliche Auswirkungen"
+  },
+  {
+    "objectID": "index.html#erste-untersuchungen-über-kimensch-zusammenarbeit",
+    "href": "index.html#erste-untersuchungen-über-kimensch-zusammenarbeit",
+    "title": "Künstliche Intelligenz",
+    "section": "Erste Untersuchungen über KI/Mensch Zusammenarbeit",
+    "text": "Erste Untersuchungen über KI/Mensch Zusammenarbeit\n\n\n758 consultants\n\n\n4867 software developers\n\n\n\nsehen 25-40% Zunahme der Produktivität"
+  },
+  {
+    "objectID": "index.html#geistige-arbeit-2030",
+    "href": "index.html#geistige-arbeit-2030",
+    "title": "Künstliche Intelligenz",
+    "section": "geistige Arbeit 2030",
+    "text": "geistige Arbeit 2030\n\nKI führt zu einer neuen geistigen Arbeit"
+  },
+  {
+    "objectID": "index.html#körperliche-arbeit",
+    "href": "index.html#körperliche-arbeit",
+    "title": "Künstliche Intelligenz",
+    "section": "körperliche Arbeit",
+    "text": "körperliche Arbeit\n\n\n1900\n\n\n2024"
+  },
+  {
+    "objectID": "index.html#was-meint-ihr",
+    "href": "index.html#was-meint-ihr",
+    "title": "Künstliche Intelligenz",
+    "section": "Was meint ihr?",
+    "text": "Was meint ihr?\nKI/Mensch Zusammenarbeit ist eine eher wahrscheinliche Entwicklung.\n\n\n\n\n\n\nKI am Arbeitsplatz macht mir Sorgen.\n\n\n\n\n\n\n\n\n\n\n\n–&gt;"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nKI Chatbots im Schulumfeld"
+  },
+  {
+    "objectID": "index.html#chatbots-über-die-bildung",
+    "href": "index.html#chatbots-über-die-bildung",
+    "title": "Künstliche Intelligenz",
+    "section": "Chatbots über die Bildung",
+    "text": "Chatbots über die Bildung\nWas ist Bildung?\n\nSchweizer Sicht:\n\n“Bildung wird in der Schweiz als ein Weg betrachtet, um sowohl individuelle Potenziale zu entfalten als auch gesellschaftlich verantwortliche, vielseitig gebildete Menschen hervorzubringen.”\n\nUSA Sicht:\n\n“In den USA wird Bildung oft als ein grundlegendes Mittel für sozialen und wirtschaftlichen Aufstieg angesehen. Es herrscht die Überzeugung, dass jeder – unabhängig von Herkunft, Geschlecht oder sozialem Status – durch Bildung die Möglichkeit hat, seine Situation zu verbessern und den ‘American Dream’ zu verwirklichen.”\n\n\nWas ist Lernen?\n\n“Unter ‘Lernen’ versteht man den Prozess, bei dem Individuen neue Informationen, Fähigkeiten, Verhaltensweisen oder Denkweisen erwerben, verstehen und im Gedächtnis verankern.”\n\nWas sind Kompetenzen?\n\n“Kompetenzen sind die Fähigkeiten, Fertigkeiten, Kenntnisse und Haltungen, die es einer Person ermöglichen, erfolgreich Aufgaben zu bewältigen, Herausforderungen zu meistern und Probleme in unterschiedlichen Lebensbereichen zu lösen.”"
+  },
+  {
+    "objectID": "index.html#chatbots-in-der-bildung",
+    "href": "index.html#chatbots-in-der-bildung",
+    "title": "Künstliche Intelligenz",
+    "section": "Chatbots in der Bildung",
+    "text": "Chatbots in der Bildung\n\n\n Source\n\n“Of the top 20 education apps in the U.S. App Store, five are AI agents that help students with their school assignments, according to data from Data.ai on May 21.”"
+  },
+  {
+    "objectID": "index.html#chatbot-einsatz-2024",
+    "href": "index.html#chatbot-einsatz-2024",
+    "title": "Künstliche Intelligenz",
+    "section": "Chatbot Einsatz 2024",
+    "text": "Chatbot Einsatz 2024\n\n\nLernende\n\nLöse meine Aufgaben\n\nInhaltliche-/Formulierungshilfe\nKorrekturlesen\n\nHilf mir bei der Prüfungsvorbereitung\n\nVorhersage des Prüfungsverlaufs\nSimulation von Prüfungssituationen\nVorgefertigte Lösungen/Antworten\n\nErkläre mir den Lernstoff\n\nFormulierungen/Zusammenhänge\nZusammenfassung des Lernstoffs\n\nInformationsbeschaffung\n\n\nLehrende\n\nErstellung von Lernmaterial\n\nErstellung von Begleitmaterial\nErstellung von Aufgaben\nErstellung von Lösungen\nErstellung von Prüfungsfragen\n\nBeurteilung von Lernleistungen\n\nBeurteilung von Hausaufgaben\nBeurteilung von Prüfungen\nBeurteilung von Referaten\n\nPlanung von Unterricht\n\nPlanung von Unterrichtseinheiten\nPlanung von Prüfungsabläufen\n\nInformationsbeschaffung"
+  },
+  {
+    "objectID": "index.html#nzz-2024",
+    "href": "index.html#nzz-2024",
+    "title": "Künstliche Intelligenz",
+    "section": "NZZ 2024",
+    "text": "NZZ 2024\nEin Zürcher Maturand sagt [Bestnote Deutsch!]: «Ich habe keines meiner Bücher gelesen. Das hat alles die KI für mich gemacht»"
+  },
+  {
+    "objectID": "index.html#prompt-tips-2024",
+    "href": "index.html#prompt-tips-2024",
+    "title": "Künstliche Intelligenz",
+    "section": "Prompt Tips 2024",
+    "text": "Prompt Tips 2024"
+  },
+  {
+    "objectID": "index.html#ki-zur-korrekturhilfe",
+    "href": "index.html#ki-zur-korrekturhilfe",
+    "title": "Künstliche Intelligenz",
+    "section": "KI zur Korrekturhilfe",
+    "text": "KI zur Korrekturhilfe\nChatGPT korrigiert Lösungen zur Geschichtsprüfung: Kompetenzorientierter Unterricht: Geschichte, Neue Systematik: 2009-2013 Lehrer*innenfortbildung BW\n\nAufgabe: Erläutern Sie die Ausgangsbedingungen des Industrialisierungsprozesses in England und maßgebliche Unterschiede zu denen in Deutschland. (12 VP)\nKriterien (für die Lehrperson):\n\nKriterien für eine gute Leistung:\n\nDem Schüler gelingt es, einige wesentliche Aspekte, die die frühe industrielle Entwicklung Englands bedingen, durch entsprechend ausgeführte Beispiele aus unterschiedlichen Bereichen strukturiert darzustellen. Er macht den inneren Zusammenhang einiger dieser Aspekte deutlich und führt dementsprechend die verspätete Industrialisierung in Deutschland auf das Fehlen dieses Bedingungsgefüges zurück, dabei kann er ergänzend auch auf Besonderheiten in Deutschland, die den Beginn der Industrialisierung gehemmt haben, zurückgreifen.\n\nKriterien für eine ausreichende Leistung:\n\nEher additiv werden einige Aspekte der englischen Industrialisierung genannt, die nicht in einen engeren Zusammenhang zueinander gebracht werden. Es werden Beispiele angeführt, allerdings werden diese nicht eingehender erklärt, auch der Vergleich mit Deutsch-land erscheint wenig stringent.\n\n\n\nR:“By comparing the grading of a human lecturer and ChatGPT-4 in an experiment with 105 students, our study found a strong positive correlation between the scores given by both, despite some mismatches.”"
+  },
+  {
+    "objectID": "index.html#was-meint-ihr-1",
+    "href": "index.html#was-meint-ihr-1",
+    "title": "Künstliche Intelligenz",
+    "section": "Was meint ihr?",
+    "text": "Was meint ihr?\n\nDas spart Arbeit/Zeit in der Schule.\n\n\n\n\n\n\nDie Nutzung von ChatGPT im Schulumfeld hilft der Bildung."
+  },
+  {
+    "objectID": "index.html#ki-bots-im-schulumfeld",
+    "href": "index.html#ki-bots-im-schulumfeld",
+    "title": "Künstliche Intelligenz",
+    "section": "KI Bots im Schulumfeld",
+    "text": "KI Bots im Schulumfeld\n\n\nVergleichsstudie an 1000 Lernenden:\nPrüfungsvorbereitung mit und ohne KI Chatbots\n\nUnterschiedliche Hausaufgaben zur Mathe Prüfungsvorbereitung\n\nGruppe 1: Basis - traditionell\nGruppe 2: +48% - ChatGPT\nGruppe 3: +127% - einfacher sokratischer GPT-Tutor (nicht adaptiv)\n\nPrüfung über den Lernstoff\n\nChatGPT Gruppen sind schlechter als die traditionelle Gruppe\nGTP-Tutor Gruppe erzielt gleiche Ergebnisse wie die traditionelle Gruppe"
+  },
+  {
+    "objectID": "index.html#antworten-13",
+    "href": "index.html#antworten-13",
+    "title": "Künstliche Intelligenz",
+    "section": "Antworten 1/3",
+    "text": "Antworten 1/3\n\n\nKI im Schulumfeld ist per se nicht förderlich\n\nTechnologie reduziert Durchdringung\nverleitet zu Kompetenzsimulation\nreduziert die Notwendigkeit von Wissen durch schnelle Verfügbarkeit von Information\nMiss- und Fehlinformation sind leicht verfüg-/erzeugbar\nVerführung zu Plagiat und Betrug\nFührt zur fehlerhaften Einschätzung der eigenen Kompetenz\n\naber is Realität. D.h. Wegschauen ist keine Lösung!\n\n\n\n\nDALL·E 3: Consumer Education"
+  },
+  {
+    "objectID": "index.html#antworten-23",
+    "href": "index.html#antworten-23",
+    "title": "Künstliche Intelligenz",
+    "section": "Antworten 2/3",
+    "text": "Antworten 2/3\nKann man den Einsatz von KI Chatbots im Schulumfeld kontrollieren?\n\n\n\nDetektion von\n\nKI generierten Texten: ja (Watermarking,aber …)\nKI generierten Inhalten: nein\nKI generierten Lösungen: nein\nKI simulierten/vorhergesagten Prüfungsverlauf: nein\n\n\nAuch wenn das Ergebnis selbst formuliert/vorgetragen wird, kann der Inhalt 100% durch KI generiert sein!!! Aber wie unterscheidet sich das von General Parental Tutoring (OldGPT)?  Wie kanalisieren wir die Nutzung von OldGPT/ChatGPT?\n\n\n\n\nBund Aug 2024: Bildungskarriere hängt vom Elternhaus ab"
+  },
+  {
+    "objectID": "index.html#antworten-33",
+    "href": "index.html#antworten-33",
+    "title": "Künstliche Intelligenz",
+    "section": "Antworten 3/3",
+    "text": "Antworten 3/3\n\n\nEs braucht Methodik um die Vorteile von KI zu heben\n\nbringt Kapazität für individuelle Förderung\nermöglicht Schöpfungstiefe durch komplexere Aufgabenstellungen\nfördert Durchdringung durch direkten Start an der Kompetenzgrenze\nzielt auf tiefes Wissen durch Vernetzung von Wissen und Kompetenzen\nmotiviert durch lebensnahes, exploratives Lernen von komplexen Zusammenhängen\n\n\n\n\n\nDALL·E 3: Education as Exploration\n\n\n\n\nDas bedeutet eine enge Lernbegleitung durch Lehrpersonen und Tools"
+  },
+  {
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nZusammenfassung und Diskussion"
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\n- Vielen Dank für die Aufmerksamkeit! -\n\nhttps://github.com/WolfgangSpahn"
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\nIntelligente Lernbegleitsysteme"
+  },
+  {
+    "objectID": "index.html#historie",
+    "href": "index.html#historie",
+    "title": "Künstliche Intelligenz",
+    "section": "Historie",
+    "text": "Historie\nDer Versuch digitale Lernsysteme zu entwickeln, der die individuellen Bedürfnisse von Lernenden berücksichtigt, ist nicht neu.\n\n\n\n1960-1990: University of Illinois\nZiel: Unterstütze Studierende individuell mit verschiedenen Lehr- und Lernstoffen\nLogik basierend; lief auf Großrechnern\nTausende von Installationen\nGestartet 1960 und weiterentwickelt bis ca. 1990\n\n\n\n\n\n\nSchwachstellen: Sehr limitiert und mechanistisch durch die fehlende Rechenkapazität und die Komplexität der Algorithmen"
+  },
+  {
+    "objectID": "index.html#autotutor",
+    "href": "index.html#autotutor",
+    "title": "Künstliche Intelligenz",
+    "section": "AutoTutor",
+    "text": "AutoTutor\nNeuere Ansätze basierten auf klassische KI-Methoden und sokratischen Dialog.\n\n\n\n1995-2010: University of Memphis\nbasiert auf Analysen von Dialogen zwischen non-Expert Nachhilfelehrern und Schülern\nDialogbasierte Nachhilfe mittels klassischer KI-Methoden\nEinfaches Instruktion-Design mit einer zentralen Fragestellung (Deep Questions)\n\n\n\n\n\n\nSchwachstellen: Hat Schwierigkeiten mit unvorhergesehenen Fragen und Antworten, hat instruktionellen Fokus. Inhalte müssen von Experten erstellt werden. Potentieller Raum von Antworten muss klar abgesteckt sein.\nGrundlage für kommerzielle Tutor-Systeme und Assessment-Systeme\n\n\nhttps://www.pearsonassessments.com/ https://www.hogrefe.com/ch/ https://www.carnegielearning.com/ https://www.knewton.com"
+  },
+  {
+    "objectID": "index.html#wie-erreichen-wir-eine-pädagogische-ausrichtung",
+    "href": "index.html#wie-erreichen-wir-eine-pädagogische-ausrichtung",
+    "title": "Künstliche Intelligenz",
+    "section": "Wie erreichen wir eine Pädagogische Ausrichtung?",
+    "text": "Wie erreichen wir eine Pädagogische Ausrichtung?\n\nAdressierung/Respektierung der unterschiedlichen Dimensionen des Lernens\n\nLernziele | Lerninhalte | Lernmethode | Lernpfad | Lernzeit | Lernort\n\nBerücksichtigung der Voraussetzungen der Lernenden\n\nVorwissen | Leistungsfähigkeit | Interessen | Unterstützung | Motivation | Lernstil\n\nBerücksichtigung der Methoden der Didaktik der Lehrperson\n\nInstruktion | Konstruktion | Kooperation | Wettbewerb | Kommunikation | Exploration | Reflexion\n\nNutzung des Potentials der KI Technologie für die Pädagogik\n\nKognition | Interaktivität | Individualisierung | Adaptivität | Vernetzung | Kollaboration | Gamification"
+  },
+  {
+    "objectID": "index.html#pädagogisches-menschenbild",
+    "href": "index.html#pädagogisches-menschenbild",
+    "title": "Künstliche Intelligenz",
+    "section": "Pädagogisches Menschenbild",
+    "text": "Pädagogisches Menschenbild\n\nBehaviorismus: geht davon aus, dass menschliches Verhalten durch äußere Reize konditioniert wird. Lernen wird als eine Reaktion auf Umwelteinflüsse gesehen, wobei das Verhalten durch Belohnung oder Bestrafung verstärkt oder abgeschwächt wird.\nKognitivismus: betont die Rolle mentaler Prozesse im Lernablauf. Lernen wird als aktiver Prozess der Informationsverarbeitung verstanden, bei dem das Individuum Informationen aufnimmt, speichert und verarbeitet, um Wissen aufzubauen.\nKonstruktivismus: besagt, dass Wissen und Kompetenzen nicht passiv aufgenommen, sondern aktiv durch den Lernenden selbst konstruiert wird. Lernen ist ein individueller Prozess, bei dem neue Informationen mit vorhandenen Wissensstrukturen verknüpft werden.\nKonnektivismus: basiert auf der Vernetzung und dem Austausch von Wissen im digitalen Zeitalter. Lernen findet in Netzwerken statt, wobei der Zugang zu Informationen und die Fähigkeit, Verbindungen zwischen Wissensquellen herzustellen, im Vordergrund stehen."
+  },
+  {
+    "objectID": "index.html#was-meint-ihr-2",
+    "href": "index.html#was-meint-ihr-2",
+    "title": "Künstliche Intelligenz",
+    "section": "Was meint ihr?",
+    "text": "Was meint ihr?\n\n\nWas ist Euer pädagogisches Menschenbild?\nBildung sollte:"
+  },
+  {
+    "objectID": "index.html#vision-mint-bildung-2035",
+    "href": "index.html#vision-mint-bildung-2035",
+    "title": "Künstliche Intelligenz",
+    "section": "Vision MINT Bildung 2035",
+    "text": "Vision MINT Bildung 2035\n\n\nUnterstützt/ermöglicht durch KI\n\nindividuelle Entwicklung\npersonalisierte Ansätze\neigenes Tempo \nlernen in der Gruppe\nLehrpersonen als Lernpartner\neigenverantwortlicher Lernprozess\n\n\n \n\n  \n\nSources: 1 2 3"
+  },
+  {
+    "objectID": "index.html#was-meint-ihr-3",
+    "href": "index.html#was-meint-ihr-3",
+    "title": "Künstliche Intelligenz",
+    "section": "Was meint ihr?",
+    "text": "Was meint ihr?\n\nDas ist eine passende Vision für die MINT Bildung 2035\n\n\n\n\n\n\n\nma  ## _\n\n\nPraxisbeispiel AIdu: konstruktivistisch-kognitive KI Lernsysteme"
+  },
+  {
+    "objectID": "index.html#wie-hat-sich-der-tutor-verhalten",
+    "href": "index.html#wie-hat-sich-der-tutor-verhalten",
+    "title": "Künstliche Intelligenz",
+    "section": "Wie hat sich der Tutor verhalten?",
+    "text": "Wie hat sich der Tutor verhalten?\n\n\nWas kann der Tutor schon, was noch nicht? Wie unterscheidet sich der Tutor von ChatGPT? Wie von einem Menschen?"
+  },
+  {
+    "objectID": "index.html#erstellung-von-lernmaterial-mit-ki",
+    "href": "index.html#erstellung-von-lernmaterial-mit-ki",
+    "title": "Künstliche Intelligenz",
+    "section": "Erstellung von Lernmaterial mit KI",
+    "text": "Erstellung von Lernmaterial mit KI\nGPT4 erstellt Aufgaben gemäss Bloomscher Taxonomie."
+  },
+  {
+    "objectID": "index.html#architektur",
+    "href": "index.html#architektur",
+    "title": "Künstliche Intelligenz",
+    "section": "Architektur",
+    "text": "Architektur\n\n\nEin typisches KI Lernsystem besteht aus mehreren Komponenten, die unterschiedliche Aufgaben erfüllen und miteinander interagieren.\n\nNutzerinteraktion\nWissensrepräsentation\nKognitives Modell der Lernenden\nPädagogisches Modell\n\nSie sind mittels unterschiedlicher technologischer Ansätze realisiert."
+  },
+  {
+    "objectID": "index.html#dialoganalyse",
+    "href": "index.html#dialoganalyse",
+    "title": "Künstliche Intelligenz",
+    "section": "Dialoganalyse",
+    "text": "Dialoganalyse\n\n\n\nDialog A\n\nAI: Let’s solve this. Please read it\nStudent: I have read it\n….. \nStudent: we get x\nAI: So we bring everything with x on one side\nStudent: 8x = 10\nAI: great you have done it, and now\nStudent: I need to get x\nAI: yes now you need to have just x on one side\nStudent: x = 10/8\nAI: nearly done\nStudent: what do you mean\nAI: you can simplify further\nStudent: x = 5/4\n\n\n\n\nDialog B\n\nAI: Let’s solve this. Please read it\nStudent: I have read it\nAI: how would you solve this\nStudent: we need to isolate x to one side\nAI: Good, just do it\nStudent: 8x = 10\nAI: And now\nStudent: x = 10/8 = 5/4\n\nFragen:\n\nHow much is the contribution of the student and AI in A and in B.\nWhat concepts are still not understood by the student in A\nWhat strategy towards solution does AI and student use in A and B"
+  },
+  {
+    "objectID": "index.html#qualitätskontrolle",
+    "href": "index.html#qualitätskontrolle",
+    "title": "Künstliche Intelligenz",
+    "section": "Qualitätskontrolle",
+    "text": "Qualitätskontrolle\n\n\nDa wir mit ‘open ended’ Fragen arbeiten, ist die Qualitätskontrolle schwierig.\n\nVerwende die Vorteile von klassischer KI\n\nKonvertiere die Aufgabenstellung in ein computerverständliches Format\nnutzte symbolische KI Methoden zur Verifikation\n\nAnsätze\n\nComputer Algebra Systeme für Mathematik, Physik, Chemie\nKnowledge Graphen für nicht mathematische Inhalte: Bio, Geschichte … (?)\nExpertensysteme und Logik für Schlussfolgerungen (?)"
+  },
+  {
+    "objectID": "index.html#please_vote_id",
+    "href": "index.html#please_vote_id",
+    "title": "Künstliche Intelligenz",
+    "section": "_",
+    "text": "_\n\n\n- Please vote. Every vote counts! -\n\nBack\n\n\n\n\n\n\nDr. Wolfgang Spahn"
+  }
+]

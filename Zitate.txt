@@ -1,0 +1,19 @@
+Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models
+
+    Models demonstrate many surprising capabilities as they grow. One capability we explore in depth is an
+    improved ability to propose legal chess moves with increasing scale, which suggests that models are learning
+    the rules of chess from transcribed games in their training data (Figure 16). This provides a simple example
+    of language models capturing structure that is only incidentally and implicitly encoded in their training data.
+
+Emergent Abilities of Large Language Models
+
+    An ability is emergent if it is not present in smaller models but is present in larger models.
+    Emergent abilities would not have been directly predicted by extrapolating a scaling law (i.e. consistent
+    performance improvements) from small-scale models. When visualized via a scaling curve (x-axis: model
+    scale, y-axis: performance), emergent abilities show a clear pattern—performance is near-random until a
+    certain critical threshold of scale is reached, after which performance increases to substantially above random.
+    This qualitative change is also known as a phase transition—a dramatic change in overall behavior that would
+    not have been foreseen by examining smaller-scale systems.
+
+
+

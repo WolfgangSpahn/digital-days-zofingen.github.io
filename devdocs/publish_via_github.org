@@ -1,0 +1,29 @@
+* publish via github
+
+1. **Repository Setup:**
+   - Ensure your Quarto presentation files are in the `docs/` folder in your repository.
+   
+2. **Enable GitHub Pages:**
+   - Go to your GitHub repository.
+   - Click on the **Settings** tab.
+   - Scroll down to the **Pages** section (usually under the "Code and Automation" section).
+   - In the **Source** dropdown, select `main` branch and `/docs` folder.
+   - Save the settings.
+   
+3. **Push Quarto Files to GitHub:**
+   - If you haven’t already, commit and push your Quarto presentation files (including the generated HTML, CSS, or other assets) to the `docs/` directory in your repository.
+
+4. **Wait for the Pages to Build:**
+   - GitHub Pages will take a few minutes to build your site.
+   - After a few moments, you'll see a link that indicates your website is live.
+
+5. **Access the Presentation:**
+   - Your presentation will be available at `https://<your-github-username>.github.io/<your-repo-name>/`.
+
+** Additional Tips:
+- Custom Domain: If you have a custom domain, you can configure it in the same **Pages** settings section.
+- Preview Locally: Before committing, you can preview your Quarto presentation locally using `quarto preview` to ensure everything is rendering correctly.
+- **Ensure index file:** Ensure the `docs` folder contains an `index.html` file, as GitHub Pages will use this as the entry point.
+- **Be aware:** that quarto scans you whole directory from .(g)md files. So, **don't use .(g)md files for local purposes**. .quartoignore fails to work
+
+* get interactive.js working
